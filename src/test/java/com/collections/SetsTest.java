@@ -69,7 +69,7 @@ public class SetsTest {
             String[] item = ALL_DRINKS.get(i);
             String expectedResult = DRINK_NAMES.get(i);
 
-            String actualResult = Sets.checkDrinks(item[0], Arrays.asList(item).subList(1, item.length));
+            String actualResult = Sets.check_drinks(item[0], Arrays.asList(item).subList(1, item.length));
             Assertions.assertEquals(expectedResult, actualResult,
                     String.format("Expected %s for %s, but got something else instead.", expectedResult, item[0]));
         }
